@@ -8,6 +8,9 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
+    sso:
+      path: /sso/*
+      url: forward:/greeting
     myservices:
       path: /api/ms/**
       serviceId: ai-spring-cloud-myservice
