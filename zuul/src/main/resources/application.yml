@@ -8,9 +8,9 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
-    sso:
-      path: /sso/*
-      url: forward:/greeting
+#    sso:
+#      path: /sso/login
+#      url: forward:/sso/login
     myservices:
       path: /api/ms/**
       serviceId: ai-spring-cloud-myservice
@@ -19,3 +19,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:9001/eureka/
+
+
+auth:
+  user:
+    secrets:
+      ai: 4d62e3bb-f67a-467f-b3c4-f28875772a75
+      hua: 7d6cfc45-f712-486e-a687-0d18e15172d7
+      allen: 42782b17-6956-4b0d-95e7-53b4dedf9681

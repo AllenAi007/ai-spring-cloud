@@ -10,7 +10,7 @@ import java.util.Base64;
 public class LoginServiceImp implements LoginService {
 
     @Override
-    public User doLogin(String username, String password) {
+    public User login(String username, String password) {
         if(username == "AIHUA" && password == "abc123") {
             return new User(username, password);
         }

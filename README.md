@@ -17,5 +17,7 @@ curl localhost:9002/api/ms/hello
 curl --header "Authentication: BASIC YWlodWE6YWJjMTIz" localhost:9002/api/ms/hello
 -- with admin:admin
 curl --header "Authentication: BASIC YWRtaW46YWRtaW4=" localhost:9002/api/ms/hello
+-- with 
+curl --header "X-Requested-With: XMLHttpRequest" localhost:9002/api/ms/hello
 
 # configuration server 9003

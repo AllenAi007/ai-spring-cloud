@@ -10,7 +10,7 @@ public interface LoginService {
      * @param password
      * @return return null means login failed.
      */
-    public User doLogin(String username, String password);
+    public User login(String username, String password);
 
     /**
      * Verify each service to see whether they are authorized or not, if not redirect to

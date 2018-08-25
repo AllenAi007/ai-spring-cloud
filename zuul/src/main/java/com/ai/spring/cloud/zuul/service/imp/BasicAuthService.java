@@ -14,7 +14,6 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Basic AUTH, using Base64(username:password)
  */
-@Service
 public class BasicAuthService implements AuthService {
 
     private static final Logger log = LoggerFactory.getLogger(BasicAuthService.class);
